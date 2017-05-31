@@ -1,0 +1,7 @@
+https://csl.name/post/lua-and-cpp/
+
+Local machine has lua5.2 installed.
+lua5.2
+liblua5.2-0
+liblua5.2-dev
+Do put -llua5.2 after source files. Or there will be ld error awaiting.
