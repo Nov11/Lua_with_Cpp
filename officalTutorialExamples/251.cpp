@@ -1,7 +1,7 @@
 //
 // Created by c6s on 17-6-2.
 //
-
+//ref : http://www.cnblogs.com/stephen-liu74/archive/2012/07/20/2460634.html
 #include <cstdio>
 #include <string>
 #include <lua5.2/lua.hpp>
