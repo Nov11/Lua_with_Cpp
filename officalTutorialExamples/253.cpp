@@ -71,6 +71,8 @@ void call_va(lua_State *L, const char *func, const char *sig, ...) {
             case 's':  /* string result */
                 if (!lua_isstring(L, nres))
                     error(L, "wrong result type");
+                //this should be a string copy since I added pop operation after switch block
+                //or the string may be invalid after pop off from the stack, which said in offical ref
                 *va_arg(vl, const char **) = lua_tostring(L, nres);
                 break;
 
