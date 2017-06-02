@@ -19,6 +19,9 @@ target_link_libraries(251 ${LIBS})
 add_executable(252 252.cpp common.cpp)
 target_link_libraries(252 ${LIBS})
 
+add_executable(253 253.cpp common.cpp)
+target_link_libraries(253 ${LIBS})
+
 #add_custom_target(phonyyyy
 #        COMMAND cp
 #        ${CMAKE_CURRENT_SOURCE_DIR}/scripts ${CMAKE_CURRENT_BINARY_DIR}/scripts )
