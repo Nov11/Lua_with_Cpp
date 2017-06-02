@@ -22,6 +22,8 @@ void error (lua_State* L, const char* fmt, ...)
     exit(EXIT_FAILURE);
 }
 
+
+
 int main(){
     lua_State * L = luaL_newstate();
     luaL_openlibs(L);

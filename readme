@@ -1,3 +1,9 @@
 Try to figure out how to enable lua script in my network library.
 This project may server as useful references to those who want to embed lua in their apps.
 So I upload these files.
+
+
+hints:
+1. If you wanna use functions in lua scripts, remember to use luaL_openlibs. Or you will be told about calling a nil value.
+2. When loading functions from lua scripts, call pcall before using any functions defined there. Or 'calling a nil value' awaits you.
+3. lua_typename is not consistent. Even if type integer is the same, the string it returns may differ. I haven't figure out why.
