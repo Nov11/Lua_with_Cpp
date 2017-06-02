@@ -14,7 +14,7 @@ int main()
     luaL_openlibs(L);
  
     //run a Lua scrip here
-    luaL_dofile(L,"foo.lua");
+    luaL_dofile(L,"scripts/foo.lua");
  
     printf("\nI am done with Lua in C++.\n");
  
