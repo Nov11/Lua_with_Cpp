@@ -16,7 +16,7 @@ set(LIBS ${LIBS} ${LUA_LIBRARIES})
 include_directories(${PROJECT_SOURCE_DIR})
 
 add_subdirectory(lua-and-cpp)
-add_subdirectory(simpleExamples)
+add_subdirectory(officalTutorialExamples)
 
 #add_executable(main ${SOURCE_FILES})
 #target_link_libraries(main net base)
