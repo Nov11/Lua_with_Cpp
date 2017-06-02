@@ -1,14 +1,13 @@
 //run sudo apt-get install lua5.2 liblua5.2-dev before compiling
-extern "C" {
-#include "lua.h"
-#include "lualib.h"
-#include "lauxlib.h"
-}
+//extern "C" {
+//#include "lua.h"
+//#include "lualib.h"
+//#include "lauxlib.h"
+//}
+#include <lua5.2/lua.hpp>
  
 int main()
 {
-    int s=0;
- 
     lua_State *L = luaL_newstate();
  
     // load the libs

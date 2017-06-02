@@ -8,7 +8,6 @@ extern "C" {
 int main()
 {
     printf("headers with lua5.2\n");
-    int s=0;
  
     lua_State *L = luaL_newstate();
  
