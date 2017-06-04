@@ -9,14 +9,11 @@
 #include "common.h"
 using namespace std;
 
-
 static int l_sin (lua_State *L) {
     double d = luaL_checknumber(L, 1);  /* get argument */
     lua_pushnumber(L, sin(d));  /* push result */
     return 1;  /* number of results */
 }
-
-
 
 static int l_dir (lua_State *L) {
     DIR *dir;
@@ -51,6 +48,7 @@ int main(){
 
     lua_pushcfunction(L, l_dir);
     lua_setglobal(L, "l_dir");
+    //this is a short form of the two lines above
     lua_register(L, "l_sin", l_sin);
 
     if (luaL_loadfile(L, "scripts/calledinlua.lua") || lua_pcall(L, 0, 0, 0)) {

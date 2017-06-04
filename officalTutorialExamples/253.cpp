@@ -77,7 +77,8 @@ void call_va(lua_State *L, const char *func, const char *sig, ...) {
             default:
                 error(L, "invalid option (%c)", *(sig - 1));
         }
-        lua_pop(L, 1);
+        //I should not have added this
+//        lua_pop(L, 1);
         nres++;
     }
     va_end(vl);
