@@ -22,6 +22,8 @@ target_link_libraries(252 ${LIBS})
 add_executable(253 253.cpp common.cpp)
 target_link_libraries(253 ${LIBS})
 
+add_executable(261 261.cpp common.cpp)
+target_link_libraries(261 ${LIBS})
 #add_custom_target(phonyyyy
 #        COMMAND cp
 #        ${CMAKE_CURRENT_SOURCE_DIR}/scripts ${CMAKE_CURRENT_BINARY_DIR}/scripts )
@@ -33,3 +35,7 @@ add_custom_command(TARGET 25 PRE_BUILD
 add_custom_command(TARGET 252 PRE_BUILD
         COMMAND ${CMAKE_COMMAND} -E copy
         ${CMAKE_CURRENT_SOURCE_DIR}/scripts/f.lua ${CMAKE_CURRENT_BINARY_DIR}/scripts/f.lua )
+
+add_custom_command(TARGET 261 PRE_BUILD
+        COMMAND ${CMAKE_COMMAND} -E copy
+        ${CMAKE_CURRENT_SOURCE_DIR}/scripts/calledinlua.lua ${CMAKE_CURRENT_BINARY_DIR}/scripts/calledinlua.lua )
